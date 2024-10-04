@@ -1,7 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://cjdch8jpvi0pu"]
+[gd_scene load_steps=3 format=3 uid="uid://cjdch8jpvi0pu"]
 
 [ext_resource type="PackedScene" uid="uid://lhar73cabbkt" path="res://player/PlayerCH.tscn" id="1_3jkfb"]
+[ext_resource type="Texture2D" uid="uid://dgkgn34e4ogtc" path="res://icon.svg" id="2_ym06m"]
 
 [node name="Game" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(735.5, 415)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(-3.5, -2)
+texture = ExtResource("2_ym06m")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(-3.5, -2)
+polygon = PackedVector2Array(59.1, -64, -59, -64, -63.8, -59, -64, 61, -60.3, 64, 59.6, 64, 63.9, 59, 64, -61.1)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_3jkfb")]
