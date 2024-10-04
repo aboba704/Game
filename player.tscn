@@ -1,18 +1,37 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8keh5exjw15"]
+[gd_scene load_steps=5 format=3 uid="uid://b8keh5exjw15"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_u1id2"]
 [ext_resource type="Texture2D" uid="uid://dgkgn34e4ogtc" path="res://icon.svg" id="2_wqa2x"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_grc6u"]
-size = Vector2(127, 130)
+[sub_resource type="SpriteFrames" id="SpriteFrames_c5nup"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wqa2x")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i35qa"]
+radius = 49.0
+height = 122.0
 
 [node name="Player" type="Area2D"]
 script = ExtResource("1_u1id2")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(167, 149)
-texture = ExtResource("2_wqa2x")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, 1)
+sprite_frames = SubResource("SpriteFrames_c5nup")
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(166.5, 148)
-shape = SubResource("RectangleShape2D_grc6u")
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_i35qa")
+one_way_collision_margin = 0.0

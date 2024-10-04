@@ -5,3 +5,11 @@
 [node name="Main" type="Node"]
 
 [node name="Player" parent="." instance=ExtResource("1_lm1wg")]
+
+[node name="MobTimer" type="Timer" parent="."]
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+
+[node name="StartPosition" type="Marker2D" parent="."]
