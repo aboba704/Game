@@ -17,6 +17,13 @@ offset_left = -620.0
 offset_top = -322.0
 offset_bottom = 314.0
 grow_horizontal = 0
+=======
+offset_left = 336.0
+offset_top = -338.0
+offset_right = 956.0
+offset_bottom = 311.0
+grow_horizontal = 2
+>>>>>>> Stashed changes
 grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_constants/margin_left = 100
