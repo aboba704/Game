@@ -13,32 +13,39 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -179.0
-offset_top = -63.5
-offset_right = 179.0
-offset_bottom = 63.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 573.0
+offset_bottom = 325.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2.04505, 3.19683)
 size_flags_horizontal = 4
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_vertical = 4
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_vixat")
+theme_override_font_sizes/font_size = 102
 text = "Be Honest"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_klxd7")
+theme_override_font_sizes/font_size = 48
 text = "Start"
 
 [node name="Button2" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_klxd7")
+theme_override_font_sizes/font_size = 48
 text = "Exit"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
