@@ -11,5 +11,7 @@
 [node name="ScoreTimer" type="Timer" parent="."]
 
 [node name="StartTimer" type="Timer" parent="."]
+one_shot = true
 
-[node name="StartPosition" type="Marker2D" parent="."]
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(240, 450)
