@@ -1,4 +1,4 @@
-[background arg="res://art/Backgrounds/forest_back.png" fade="0.0"]
+[background arg="res://art/Backgrounds/ev1bg.png" fade="0.0"]
 [wait time="1.0"]
 join mc (sad) left [animation="Slide In Left" length="1.0"]
 [wait time="0.5"]
