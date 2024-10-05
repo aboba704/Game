@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://custtowogvndk"
-path="res://.godot/imported/стоит.png-fceb4c16ca043f58a78dd4aa0c9cbbcc.ctex"
+path="res://.godot/imported/стоит.png-a8be810dad59052dc928d94c84ec16da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/mcRight/стоит.png"
-dest_files=["res://.godot/imported/стоит.png-fceb4c16ca043f58a78dd4aa0c9cbbcc.ctex"]
+source_file="res://art/McRight/стоит.png"
+dest_files=["res://.godot/imported/стоит.png-a8be810dad59052dc928d94c84ec16da.ctex"]
 
 [params]
 
