@@ -1,30 +1,32 @@
 extends CharacterBody2D
 
+@export var speed = 300
+@export var accel = 10000
+@export var friction = 1500
+var screen_size
 
-const SPEED = 300
-const accel = 10000
-const friction = 1500
+func _process(delta):
+	var velocity = Vector2.ZERO # The player's movement vector.
+	if Input.is_action_pressed("Right"):
+		velocity.x += 1
+	if Input.is_action_pressed("Left"):
+		velocity.x -= 1
+	if Input.is_action_pressed("Down"):
+		velocity.y += 1
+	if Input.is_action_pressed("Up"):
+		velocity.y -= 1
 
-var input = Vector2.ZERO
-
-func _physics_process(delta):
-	player_movement(delta)
-
-func get_input():
-	input.x = int(Input.is_action_pressed("Right")) - int(Input.is_action_pressed("Left"))
-	input.y = int(Input.is_action_pressed("Down")) - int(Input.is_action_pressed("Up"))
-	return input.normalized()
-	
-func player_movement(delta):
-	input = get_input()
-	
-	if input == Vector2.ZERO:
-		if velocity.length() > (friction * delta):
-			velocity -= velocity.normalized() * (friction * delta)
-		else:
-			velocity = Vector2.ZERO
+	if velocity.length() > 0:
+		velocity = velocity.normalized() * speed
+		$AnimatedSprite2D.play()
 	else:
-		velocity += (input * accel * delta)
-		velocity = velocity.limit_length(SPEED)
-	move_and_slide()
+		$AnimatedSprite2D.stop()
+	position += velocity * delta
+	position = position.clamp(Vector2.ZERO, screen_size)
+	if velocity.x != 0:
+		$AnimatedSprite2D.animation = "right"
+		$AnimatedSprite2D.flip_v = false
+		$AnimatedSprite2D.flip_h = velocity.x < 0
 	
+func _ready():
+	screen_size = get_viewport_rect().size
