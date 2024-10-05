@@ -264,20 +264,23 @@ animations = [{
 size = Vector2(17.25, 61)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(5, 5)
 script = ExtResource("1_v0tl7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(269, 280)
+position = Vector2(43.8, 46.5)
 scale = Vector2(0.12, 0.12)
 sprite_frames = SubResource("SpriteFrames_jsdb0")
 animation = &"left"
 autoplay = "idle"
 frame_progress = 0.672754
 speed_scale = 5.0
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(267, 296)
+position = Vector2(41.8, 62.5)
 shape = SubResource("RectangleShape2D_bchut")
+metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_top = 0
