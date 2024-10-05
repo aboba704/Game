@@ -92,6 +92,7 @@ text = "Exit"
 stream = ExtResource("5_t7q7w")
 volume_db = -4.267
 autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Label/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Label/Button2" to="." method="_on_button_2_pressed"]

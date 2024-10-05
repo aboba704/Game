@@ -27,6 +27,7 @@ process_mode = 2
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("3_4olho")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="bgm" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_mv6un")
 autoplay = true
+parameters/looping = true
