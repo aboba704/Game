@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://MainScene/ main_menu.gd" id="1_uo5a1"]
 [ext_resource type="Texture2D" uid="uid://cpig70iskak1g" path="res://Bagrounds/меню1.png" id="2_u874b"]
 [ext_resource type="FontFile" uid="uid://dbiepu55fiupv" path="res://art/MightySouly-lxggD.ttf" id="2_vixat"]
-[ext_resource type="FontFile" uid="uid://c6jmx3qxib4ld" path="res://art/YesevaOne-Regular.ttf" id="3_klxd7"]
+[ext_resource type="Texture2D" uid="uid://bsi7nvxqq66nr" path="res://art/menu1.PNG" id="3_vyowi"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_uo5a1")
@@ -16,6 +16,11 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 texture = ExtResource("2_u874b")
+
+[node name="Menu1" type="Sprite2D" parent="."]
+position = Vector2(960, 656)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_vyowi")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 6
@@ -64,7 +69,7 @@ theme_override_constants/outline_size = 10
 theme_override_constants/h_separation = 10
 theme_override_constants/icon_max_width = 10
 theme_override_constants/align_to_largest_stylebox = 10
-theme_override_fonts/font = ExtResource("3_klxd7")
+theme_override_fonts/font = ExtResource("2_vixat")
 theme_override_font_sizes/font_size = 102
 text = "Start"
 
@@ -78,7 +83,7 @@ theme_override_constants/outline_size = 10
 theme_override_constants/h_separation = 10
 theme_override_constants/icon_max_width = 10
 theme_override_constants/align_to_largest_stylebox = 10
-theme_override_fonts/font = ExtResource("3_klxd7")
+theme_override_fonts/font = ExtResource("2_vixat")
 theme_override_font_sizes/font_size = 102
 text = "Exit"
 
