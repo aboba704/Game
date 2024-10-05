@@ -16,7 +16,6 @@ func testEsc():
 		pause()
 	elif Input.is_action_just_pressed("Escape") and get_tree().paused:
 		resume()
-		
 
 func _on_resume_pressed() -> void:
 	resume()
