@@ -28,8 +28,7 @@ expand_mode = 1
 stretch_mode = 2
 
 [node name="Character" parent="." instance=ExtResource("6_fj744")]
-position = Vector2(349, 513)
-scale = Vector2(0.5, 0.5)
+position = Vector2(1011, 532)
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 light_mask = 2
