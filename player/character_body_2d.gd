@@ -32,12 +32,6 @@ func _physics_process(delta: float) -> void:
 	else:
 		$AnimatedSprite2D.stop()
 		$AnimatedSprite2D.animation = "idle"
-<<<<<<< Updated upstream
-	position += velocity * delta
-	position = position.clamp(Vector2.ZERO, screen_size)
-=======
-
->>>>>>> Stashed changes
 	if velocity.x != 0 || velocity.y != 0:
 		$AnimatedSprite2D.animation = "right"
 		$AnimatedSprite2D.flip_v = false

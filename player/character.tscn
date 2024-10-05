@@ -1,28 +1,3 @@
-<<<<<<< Updated upstream:player/PlayerCH.tscn
-[gd_scene load_steps=24 format=3 uid="uid://lhar73cabbkt"]
-
-[ext_resource type="Script" path="res://player/character_body_2d.gd" id="1_v0tl7"]
-[ext_resource type="Texture2D" uid="uid://custtowogvndk" path="res://art/McRight/стоит.png" id="2_op1nu"]
-[ext_resource type="Texture2D" uid="uid://bq0617ttttypj" path="res://art/McRight/1.png" id="3_yk4bh"]
-[ext_resource type="Texture2D" uid="uid://4pmyad7s7gjj" path="res://art/McRight/2.png" id="4_yqebg"]
-[ext_resource type="Texture2D" uid="uid://bhkvbrr3a6v" path="res://art/McRight/3.png" id="5_udno7"]
-[ext_resource type="Texture2D" uid="uid://gd2xxky28ym1" path="res://art/McRight/4.png" id="6_s08f2"]
-[ext_resource type="Texture2D" uid="uid://dl5bn18n205pk" path="res://art/McRight/5.png" id="7_x3gxq"]
-[ext_resource type="Texture2D" uid="uid://j6on78tq40h4" path="res://art/McRight/6.png" id="8_nho0d"]
-[ext_resource type="Texture2D" uid="uid://cljeiuuesi8f3" path="res://art/McRight/7.png" id="9_5pdm4"]
-[ext_resource type="Texture2D" uid="uid://b4are8dfmaytw" path="res://art/McRight/8.png" id="10_cgvfv"]
-[ext_resource type="Texture2D" uid="uid://dhndkfn7frx17" path="res://art/McRight/9.png" id="11_i1keq"]
-[ext_resource type="Texture2D" uid="uid://dc0pwdca50dac" path="res://art/McRight/10.png" id="12_p1s23"]
-[ext_resource type="Texture2D" uid="uid://dgurn5xhbh7ws" path="res://art/McRight/11.png" id="13_oujgn"]
-[ext_resource type="Texture2D" uid="uid://qbqmgt83foar" path="res://art/McRight/12.png" id="14_74bem"]
-[ext_resource type="Texture2D" uid="uid://cynoin3l24t1f" path="res://art/McRight/13.png" id="15_rgkxh"]
-[ext_resource type="Texture2D" uid="uid://jqdvdgxt7nf" path="res://art/McRight/14.png" id="16_pf5q5"]
-[ext_resource type="Texture2D" uid="uid://c4dkcdpgurkkb" path="res://art/McRight/15.png" id="17_3bk47"]
-[ext_resource type="Texture2D" uid="uid://dhyai2dgylv8d" path="res://art/McRight/16.png" id="18_qxw3o"]
-[ext_resource type="Texture2D" uid="uid://bdqg1x2o2nor7" path="res://art/McRight/17.png" id="19_x4a76"]
-[ext_resource type="Texture2D" uid="uid://cagfhrr1jpdhv" path="res://art/McRight/18.png" id="20_44gpt"]
-[ext_resource type="Texture2D" uid="uid://fc2m8gns3v1s" path="res://art/McRight/19.png" id="21_pa1js"]
-=======
 [gd_scene load_steps=25 format=3 uid="uid://c8jx6p556if2e"]
 
 [ext_resource type="Script" path="res://player/character_body_2d.gd" id="1_2hs0l"]
@@ -47,7 +22,6 @@
 [ext_resource type="Texture2D" uid="uid://cagfhrr1jpdhv" path="res://art/McRight/18.png" id="20_7ywex"]
 [ext_resource type="Texture2D" uid="uid://fc2m8gns3v1s" path="res://art/McRight/19.png" id="21_l0x2y"]
 [ext_resource type="Texture2D" uid="uid://doqi0jrynog3c" path="res://art/McRight/20.png" id="22_o8g5m"]
->>>>>>> Stashed changes:player/character.tscn
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6dyx8"]
 size = Vector2(162, 507)
@@ -64,14 +38,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-<<<<<<< Updated upstream:player/PlayerCH.tscn
-"texture": ExtResource("2_op1nu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_yk4bh")
-=======
 "texture": ExtResource("2_27wir")
->>>>>>> Stashed changes:player/character.tscn
 }, {
 "duration": 1.0,
 "texture": ExtResource("4_oug6i")
@@ -125,14 +92,10 @@ animations = [{
 "texture": ExtResource("20_7ywex")
 }, {
 "duration": 1.0,
-<<<<<<< Updated upstream:player/PlayerCH.tscn
-"texture": ExtResource("21_pa1js")
-=======
 "texture": ExtResource("21_l0x2y")
 }, {
 "duration": 1.0,
 "texture": ExtResource("22_o8g5m")
->>>>>>> Stashed changes:player/character.tscn
 }],
 "loop": true,
 "name": &"right",
@@ -147,15 +110,8 @@ position = Vector2(-22, 140.5)
 shape = SubResource("RectangleShape2D_6dyx8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-<<<<<<< Updated upstream:player/PlayerCH.tscn
-position = Vector2(43.8, 46.5)
-scale = Vector2(0.12, 0.12)
-sprite_frames = SubResource("SpriteFrames_jsdb0")
-animation = &"idle"
-=======
 sprite_frames = SubResource("SpriteFrames_vk43j")
 animation = &"right"
->>>>>>> Stashed changes:player/character.tscn
 autoplay = "idle"
 speed_scale = 5.0
 metadata/_edit_group_ = true
