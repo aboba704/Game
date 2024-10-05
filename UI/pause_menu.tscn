@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" path="res://UI/pause_menu.gdshader" id="1_bd4aj"]
 [ext_resource type="Script" path="res://UI/pause_menu.gd" id="1_qc3rb"]
-[ext_resource type="FontFile" uid="uid://dbiepu55fiupv" path="res://art/MightySouly-lxggD.ttf" id="2_6hslm"]
+[ext_resource type="FontFile" uid="uid://0rfs08pv6i2s" path="res://art/Better VCR 6.1.ttf" id="2_6hslm"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_w0e0k"]
 shader = ExtResource("1_bd4aj")
