@@ -119,6 +119,6 @@ metadata/_edit_group_ = true
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = 0
 limit_top = 0
-limit_right = 3300
+limit_right = 3200
 limit_bottom = 197
 position_smoothing_enabled = true

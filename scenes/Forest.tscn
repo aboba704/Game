@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://0c38vj51l3a8"]
+[gd_scene load_steps=13 format=3 uid="uid://0c38vj51l3a8"]
 
 [ext_resource type="Texture2D" uid="uid://d3vfhwktvx6lp" path="res://art/Backgrounds/forest_back.png" id="1_aysh2"]
 [ext_resource type="Script" path="res://scenes/forest.gd" id="1_piyhe"]
@@ -8,12 +8,16 @@
 [ext_resource type="AudioStream" uid="uid://dqmsrjbdpqc3j" path="res://sound/ForestTheme.mp3" id="4_mv6un"]
 [ext_resource type="Script" path="res://scenes/area_2d.gd" id="7_tkct6"]
 [ext_resource type="Texture2D" uid="uid://dgym4afwheivb" path="res://art/anim/npc1.png" id="8_7dhyv"]
+[ext_resource type="Script" path="res://scenes/next_room.gd" id="9_rol33"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iom7f"]
 size = Vector2(702, 782)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5kuic"]
-size = Vector2(3273.27, 138.609)
+size = Vector2(3285.94, 80.7511)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ncypi"]
+size = Vector2(268.162, 220.471)
 
 [node name="Game2" type="Node2D"]
 position = Vector2(-267, 3)
@@ -42,6 +46,7 @@ offset_bottom = 1389.0
 texture = ExtResource("8_7dhyv")
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_mask = 0
 script = ExtResource("7_tkct6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -70,6 +75,10 @@ stretch_mode = 2
 process_mode = 2
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("3_4olho")]
+offset_left = 22.0
+offset_top = 51.0
+offset_right = 22.0
+offset_bottom = 51.0
 
 [node name="bgm" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_mv6un")
@@ -77,10 +86,43 @@ autoplay = true
 parameters/looping = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(1, 3)
+position = Vector2(35, 3)
 scale = Vector2(1, 0.92)
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(1896, 63.3043)
 shape = SubResource("RectangleShape2D_5kuic")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(-15, 1028)
+scale = Vector2(1, 0.92)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(1879, 63.0434)
+shape = SubResource("RectangleShape2D_5kuic")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-625, 681)
+rotation = 1.57908
+scale = Vector2(0.522029, 0.448614)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-128.648, -1924.76)
+scale = Vector2(0.695215, 1.63787)
+shape = SubResource("RectangleShape2D_5kuic")
+
+[node name="NextRoom" type="Area2D" parent="."]
+scale = Vector2(1.6, 5.08)
+script = ExtResource("9_rol33")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NextRoom"]
+position = Vector2(2013.38, 114.668)
+rotation = -3.14159
+scale = Vector2(1.42832, -0.831235)
+shape = SubResource("RectangleShape2D_ncypi")
+
+[connection signal="body_entered" from="NextRoom" to="NextRoom" method="_on_body_entered"]
+[connection signal="body_exited" from="NextRoom" to="NextRoom" method="_on_body_exited"]

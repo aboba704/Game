@@ -12,6 +12,6 @@ func _on_Area2D_body_exited(body):
 	print("Тело покинуло область: ", body.name)
 
 func _process(delta):
-	if is_body_inside and Input.is_action_just_pressed("ui_accept"):
+	if is_body_inside:
 		print("Запуск катсцены...")
 		Dialogic.start("res://tl/ev2.dtl")
