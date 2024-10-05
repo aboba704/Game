@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c8jx6p556if2e"]
+[gd_scene load_steps=25 format=3 uid="uid://dy4ft2fxptwr2"]
 
 [ext_resource type="Script" path="res://player/character_body_2d.gd" id="1_2hs0l"]
 [ext_resource type="Texture2D" uid="uid://bq0617ttttypj" path="res://art/McRight/1.png" id="2_27wir"]

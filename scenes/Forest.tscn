@@ -1,13 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://6faltdvfwj4k"]
+[gd_scene load_steps=8 format=3 uid="uid://6faltdvfwj4k"]
 
 [ext_resource type="Texture2D" uid="uid://d3vfhwktvx6lp" path="res://art/Backgrounds/forest_back.png" id="1_aysh2"]
 [ext_resource type="Script" path="res://scenes/forest.gd" id="1_piyhe"]
 [ext_resource type="Texture2D" uid="uid://c8n1ge2savbg1" path="res://art/Backgrounds/forest_front.png" id="3_3fhhi"]
 [ext_resource type="PackedScene" uid="uid://bvc61qo2fp8bb" path="res://UI/pause_menu.tscn" id="3_4olho"]
+[ext_resource type="PackedScene" uid="uid://dy4ft2fxptwr2" path="res://player/character.tscn" id="3_ialo2"]
 [ext_resource type="AudioStream" uid="uid://dqmsrjbdpqc3j" path="res://sound/ForestTheme.mp3" id="4_mv6un"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5kuic"]
-size = Vector2(3254, 563)
+size = Vector2(3254, 138.609)
 
 [node name="Game2" type="Node2D"]
 position = Vector2(-267, 3)
@@ -28,22 +29,8 @@ texture = ExtResource("1_aysh2")
 expand_mode = 1
 stretch_mode = 2
 
-[node name="CharacterBody2D" parent="."]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-position = Vector2(499, 405)
-collision_layer = 0
-collision_mask = 3
-script = null
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Character" parent="." instance=ExtResource("3_ialo2")]
+position = Vector2(1011, 532)
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 anchors_preset = 15
@@ -76,5 +63,5 @@ scale = Vector2(1, 0.92)
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1896, 275.5)
+position = Vector2(1896, 63.3043)
 shape = SubResource("RectangleShape2D_5kuic")
