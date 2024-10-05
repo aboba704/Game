@@ -49,6 +49,8 @@ texture = ExtResource("3_3fhhi")
 expand_mode = 1
 stretch_mode = 2
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2
 
