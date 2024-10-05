@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 
 const SPEED = 300
-const accel = 1500
-const friction = 600
+const accel = 10000
+const friction = 1500
 
 var input = Vector2.ZERO
 
