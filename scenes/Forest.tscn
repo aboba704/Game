@@ -1,6 +1,11 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=7 format=3 uid="uid://6faltdvfwj4k"]
+=======
+[gd_scene load_steps=6 format=3 uid="uid://6faltdvfwj4k"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://d3vfhwktvx6lp" path="res://art/Backgrounds/forest_back.png" id="1_aysh2"]
+[ext_resource type="Script" path="res://scenes/forest.gd" id="1_piyhe"]
 [ext_resource type="PackedScene" uid="uid://lhar73cabbkt" path="res://player/PlayerCH.tscn" id="2_13hj0"]
 [ext_resource type="Texture2D" uid="uid://c8n1ge2savbg1" path="res://art/Backgrounds/forest_front.png" id="3_3fhhi"]
 [ext_resource type="PackedScene" uid="uid://bvc61qo2fp8bb" path="res://UI/pause_menu.tscn" id="3_4olho"]
@@ -11,6 +16,7 @@ size = Vector2(3254, 563)
 
 [node name="Game" type="Node2D"]
 position = Vector2(-267, 3)
+script = ExtResource("1_piyhe")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 15
@@ -54,7 +60,6 @@ process_mode = 2
 
 [node name="bgm" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_mv6un")
-autoplay = true
 parameters/looping = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
