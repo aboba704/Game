@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8n1ge2savbg1"
-path="res://.godot/imported/фон_лес_передний_план.png-d7c849a0a0769332b0a8ae1085723d3d.ctex"
+path="res://.godot/imported/forest_front.png-5e6ae1910efe3b248548443e26eb5e4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bagrounds/фон_лес_передний_план.png"
-dest_files=["res://.godot/imported/фон_лес_передний_план.png-d7c849a0a0769332b0a8ae1085723d3d.ctex"]
+source_file="res://art/Backgrounds/forest_front.png"
+dest_files=["res://.godot/imported/forest_front.png-5e6ae1910efe3b248548443e26eb5e4f.ctex"]
 
 [params]
 

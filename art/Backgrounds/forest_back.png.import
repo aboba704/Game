@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpig70iskak1g"
-path="res://.godot/imported/меню1.png-7efa44ccd1c7d53059b86de7d5668eed.ctex"
+uid="uid://d3vfhwktvx6lp"
+path="res://.godot/imported/forest_back.png-c7f321e7ad794af1bf0e602ff28542f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bagrounds/меню1.png"
-dest_files=["res://.godot/imported/меню1.png-7efa44ccd1c7d53059b86de7d5668eed.ctex"]
+source_file="res://art/Backgrounds/forest_back.png"
+dest_files=["res://.godot/imported/forest_back.png-c7f321e7ad794af1bf0e602ff28542f8.ctex"]
 
 [params]
 

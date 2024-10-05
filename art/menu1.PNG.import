@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< Updated upstream:art/menu1.PNG.import
-uid="uid://bsi7nvxqq66nr"
+uid="uid://sska47nohast"
 path="res://.godot/imported/menu1.PNG-6dd2b304b832c0b925db6a1459e677ea.ctex"
-========
-uid="uid://d3nn7lccj8alo"
-path="res://.godot/imported/1.png-5ae9f9e51391a551a6413936ccf55d5f.ctex"
->>>>>>>> Stashed changes:art/McRight/1.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< Updated upstream:art/menu1.PNG.import
 source_file="res://art/menu1.PNG"
 dest_files=["res://.godot/imported/menu1.PNG-6dd2b304b832c0b925db6a1459e677ea.ctex"]
-========
-source_file="res://art/McRight/1.png"
-dest_files=["res://.godot/imported/1.png-5ae9f9e51391a551a6413936ccf55d5f.ctex"]
->>>>>>>> Stashed changes:art/McRight/1.png.import
 
 [params]
 
