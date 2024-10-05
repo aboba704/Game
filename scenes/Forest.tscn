@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://0c38vj51l3a8"]
+[gd_scene load_steps=8 format=3 uid="uid://6faltdvfwj4k"]
 
 [ext_resource type="Texture2D" uid="uid://d3vfhwktvx6lp" path="res://art/Backgrounds/forest_back.png" id="1_aysh2"]
 [ext_resource type="Script" path="res://scenes/forest.gd" id="1_piyhe"]
@@ -29,7 +29,8 @@ texture = ExtResource("1_aysh2")
 expand_mode = 1
 stretch_mode = 2
 
-[node name="CharacterBody2D#Camera2D" type="Camera2D" parent="."]
+[node name="Character" parent="." instance=ExtResource("3_ialo2")]
+position = Vector2(1011, 532)
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 anchors_preset = 15
@@ -50,9 +51,6 @@ stretch_mode = 2
 process_mode = 2
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("3_4olho")]
-offset_top = 0.00012207
-offset_bottom = 0.00012207
-scale = Vector2(1.00215, 1.00094)
 
 [node name="bgm" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_mv6un")
