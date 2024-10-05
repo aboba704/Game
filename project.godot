@@ -22,13 +22,23 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"bottle": "res://tl/bottle.dch",
+"bread": "res://tl/bread.dch",
 "jus": "res://tl/jus.dch",
 "mc": "res://tl/mc.dch",
+"mirror": "res://tl/mirror.dch",
+"npc3": "res://tl/npc3.dch",
+"npc4": "res://tl/npc4.dch",
+"shard1": "res://tl/shard1.dch",
+"wom": "res://tl/wom.dch",
 "womN": "res://tl/womN.dch"
 }
 directories/dtl_directory={
 "ev1": "res://tl/ev1.dtl",
-"ev2": "res://tl/ev2.dtl"
+"ev2": "res://tl/ev2.dtl",
+"ev3": "res://tl/ev3.dtl",
+"ev4": "res://tl/ev4.dtl",
+"ev5": "res://tl/ev5.dtl"
 }
 layout/style_list=[]
 layout/default_style=""
@@ -53,7 +63,9 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autocolor_names=false
 text/autopauses={}
-variables={}
+variables={
+"Shards": 0
+}
 
 [display]
 

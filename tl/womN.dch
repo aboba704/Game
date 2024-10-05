@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 "_translation_id": "",
-"color": Color(1, 1, 1, 1),
+"color": Color(0.867188, 0.669075, 0.19986, 1),
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
@@ -20,9 +20,9 @@
 "image": "\"res://art/anim/npc1.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 700),
 "scale": 2.0,
-"scene": ""
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 },
 "close": {
 "export_overrides": {
@@ -30,8 +30,8 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
+"scale": 1.0,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 },
 "happy": {
 "export_overrides": {
@@ -40,7 +40,7 @@
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 },
 "sad": {
 "export_overrides": {
@@ -49,7 +49,7 @@
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1.0,
-"scene": ""
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 }
 },
 "scale": 1.0

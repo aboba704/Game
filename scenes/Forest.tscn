@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scenes/forest.gd" id="1_piyhe"]
 [ext_resource type="Texture2D" uid="uid://c8n1ge2savbg1" path="res://art/Backgrounds/forest_front.png" id="3_3fhhi"]
 [ext_resource type="PackedScene" uid="uid://bvc61qo2fp8bb" path="res://UI/pause_menu.tscn" id="3_4olho"]
-[ext_resource type="PackedScene" uid="uid://dy4ft2fxptwr2" path="res://player/character.tscn" id="3_ialo2"]
+[ext_resource type="PackedScene" path="res://player/character.tscn" id="3_ialo2"]
 [ext_resource type="AudioStream" uid="uid://dqmsrjbdpqc3j" path="res://sound/ForestTheme.mp3" id="4_mv6un"]
 [ext_resource type="Script" path="res://scenes/area_2d.gd" id="7_tkct6"]
 [ext_resource type="Texture2D" uid="uid://dgym4afwheivb" path="res://art/anim/npc1.png" id="8_7dhyv"]

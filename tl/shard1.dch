@@ -1,0 +1,84 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "b1",
+"description": "",
+"display_name": "",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"b1": {
+"export_overrides": {
+"image": "\"res://art/anim/shards/оскл_плох1.png\""
+},
+"ignore_char_scale": false,
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"b2": {
+"export_overrides": {
+"image": "\"res://art/anim/shards/оскл_плох2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"b3": {
+"export_overrides": {
+"image": "\"res://art/anim/shards/оскл_плох_3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"g1": {
+"export_overrides": {
+"image": "\"res://art/anim/shards/оскл_хор1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"g2": {
+"export_overrides": {
+"image": "\"res://art/anim/shards/оскл_хор2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"g3": {
+"export_overrides": {
+"image": "\"res://art/anim/shards/оскл_хор3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"s0": {
+"export_overrides": {
+"image": "\"res://art/anim/shards/оскл_0.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+}
+},
+"scale": 1.0
+}

@@ -2,53 +2,44 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 "_translation_id": "",
-"color": Color(0.888672, 0.324574, 0.324574, 1),
+"color": Color(0.900391, 0.695736, 0.211029, 1),
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "calm",
+"default_portrait": "1н",
 "description": "",
-"display_name": "Джастис",
+"display_name": "Бедная женщина в зеленом платье",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"ah": {
+"1н": {
 "export_overrides": {
-"image": "\"res://art/anim/js/ah.PNG\""
+"image": "\"res://art/anim/npc2/1н.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"2н": {
+"export_overrides": {
+"image": "\"res://art/anim/npc2/2н.PNG\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 },
-"angry": {
+"3н": {
 "export_overrides": {
-"image": "\"res://art/anim/js/angry.PNG\""
+"image": "\"res://art/anim/npc2/3н.PNG\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
-"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
-},
-"calm": {
-"export_overrides": {
-"image": "\"res://art/anim/js/calm.PNG\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
-},
-"sad": {
-"export_overrides": {
-"image": "\"res://art/anim/js/sad.PNG\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 }
 },

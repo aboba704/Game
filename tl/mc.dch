@@ -10,20 +10,11 @@
 },
 "default_portrait": "idle",
 "description": "любит сыр",
-"display_name": "ГГ",
+"display_name": "Эрви",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"New portrait": {
-"export_overrides": {
-"image": ""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
 "angry": {
 "export_overrides": {
 "image": "\"res://art/anim/mc/angry.PNG\""
@@ -31,7 +22,7 @@
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 },
 "happy": {
 "export_overrides": {
@@ -40,7 +31,7 @@
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 },
 "idle": {
 "export_overrides": {
@@ -49,7 +40,7 @@
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 },
 "sad": {
 "export_overrides": {
@@ -58,7 +49,7 @@
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 }
 },
 "scale": 1.0
