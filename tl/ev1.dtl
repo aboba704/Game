@@ -1,5 +1,5 @@
 [background arg="res://art/Backgrounds/ev1bg.png" fade="0.0"]
-[wait time="1.0"]
+[wait time="1.5"]
 join mc (sad) left [animation="Slide In Left" length="1.0"]
 [wait time="0.5"]
 join jus right [animation="Slide In Right" length="1.0"]
