@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjdch8jpvi0pu"]
+[gd_scene load_steps=5 format=3 uid="uid://6faltdvfwj4k"]
 
 [ext_resource type="Texture2D" uid="uid://f2vojobsfwu4" path="res://Bagrounds/фон_лес.jpg" id="1_8dlu3"]
 [ext_resource type="PackedScene" uid="uid://lhar73cabbkt" path="res://player/PlayerCH.tscn" id="2_13hj0"]
 [ext_resource type="PackedScene" uid="uid://bvc61qo2fp8bb" path="res://UI/pause_menu.tscn" id="3_4olho"]
+[ext_resource type="AudioStream" uid="uid://dqmsrjbdpqc3j" path="res://sound/ForestTheme.mp3" id="4_mv6un"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(-267, 3)
@@ -25,3 +26,7 @@ texture = ExtResource("1_8dlu3")
 process_mode = 2
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("3_4olho")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_mv6un")
+autoplay = true

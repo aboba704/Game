@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bvc61qo2fp8bb"]
+[gd_scene load_steps=8 format=3 uid="uid://bvc61qo2fp8bb"]
 
 [ext_resource type="Shader" path="res://UI/pause_menu.gdshader" id="1_bd4aj"]
 [ext_resource type="Script" path="res://UI/pause_menu.gd" id="1_qc3rb"]
 [ext_resource type="FontFile" uid="uid://dbiepu55fiupv" path="res://art/MightySouly-lxggD.ttf" id="2_6hslm"]
-[ext_resource type="FontFile" uid="uid://c6jmx3qxib4ld" path="res://art/YesevaOne-Regular.ttf" id="3_ubyl5"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_w0e0k"]
 shader = ExtResource("1_bd4aj")
@@ -109,7 +108,7 @@ grow_vertical = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/separation = 35
+theme_override_constants/separation = 0
 
 [node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
@@ -130,7 +129,7 @@ theme_override_constants/outline_size = 10
 theme_override_constants/h_separation = 10
 theme_override_constants/icon_max_width = 10
 theme_override_constants/align_to_largest_stylebox = 10
-theme_override_fonts/font = ExtResource("3_ubyl5")
+theme_override_fonts/font = ExtResource("2_6hslm")
 theme_override_font_sizes/font_size = 70
 text = "Resume"
 
@@ -140,7 +139,7 @@ theme_override_constants/outline_size = 10
 theme_override_constants/h_separation = 10
 theme_override_constants/icon_max_width = 10
 theme_override_constants/align_to_largest_stylebox = 10
-theme_override_fonts/font = ExtResource("3_ubyl5")
+theme_override_fonts/font = ExtResource("2_6hslm")
 theme_override_font_sizes/font_size = 70
 text = "Quit"
 

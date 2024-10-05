@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1qw520evxr4p"]
+[gd_scene load_steps=6 format=3 uid="uid://d1qw520evxr4p"]
 
 [ext_resource type="Script" path="res://MainScene/ main_menu.gd" id="1_uo5a1"]
 [ext_resource type="Texture2D" uid="uid://cpig70iskak1g" path="res://Bagrounds/меню1.png" id="2_u874b"]
 [ext_resource type="FontFile" uid="uid://dbiepu55fiupv" path="res://art/MightySouly-lxggD.ttf" id="2_vixat"]
 [ext_resource type="Texture2D" uid="uid://bsi7nvxqq66nr" path="res://art/menu1.PNG" id="3_vyowi"]
+[ext_resource type="AudioStream" uid="uid://duhlmyarmvxmc" path="res://sound/MainTheme.mp3" id="5_t7q7w"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_uo5a1")
@@ -86,6 +87,11 @@ theme_override_constants/align_to_largest_stylebox = 10
 theme_override_fonts/font = ExtResource("2_vixat")
 theme_override_font_sizes/font_size = 102
 text = "Exit"
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_t7q7w")
+volume_db = -4.267
+autoplay = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Label/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Label/Button2" to="." method="_on_button_2_pressed"]
