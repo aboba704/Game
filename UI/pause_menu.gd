@@ -13,8 +13,10 @@ func pause():
 	
 func testEsc():
 	if Input.is_action_just_pressed("Escape") and !get_tree().paused:
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		pause()
 	elif Input.is_action_just_pressed("Escape") and get_tree().paused:
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		resume()
 		
 
