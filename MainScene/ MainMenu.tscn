@@ -1,21 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1qw520evxr4p"]
+[gd_scene load_steps=5 format=3 uid="uid://d1qw520evxr4p"]
 
 [ext_resource type="Script" path="res://MainScene/ main_menu.gd" id="1_uo5a1"]
+[ext_resource type="Texture2D" uid="uid://cpig70iskak1g" path="res://Bagrounds/меню1.png" id="2_u874b"]
 [ext_resource type="FontFile" uid="uid://dbiepu55fiupv" path="res://art/MightySouly-lxggD.ttf" id="2_vixat"]
-[ext_resource type="Texture2D" uid="uid://dswc04vc8krku" path="res://art/menu.PNG" id="4_3dppn"]
+[ext_resource type="Texture2D" uid="uid://bsi7nvxqq66nr" path="res://art/menu1.PNG" id="3_vyowi"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_uo5a1")
 
-[node name="Menu" type="Sprite2D" parent="."]
-position = Vector2(960, 750)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("4_3dppn")
-
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1280.0
-offset_bottom = 1024.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 4
+texture = ExtResource("2_u874b")
+
+[node name="Menu1" type="Sprite2D" parent="."]
+position = Vector2(960, 656)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_vyowi")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 6

@@ -283,6 +283,8 @@ shape = SubResource("RectangleShape2D_bchut")
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-17.6, -2)
+scale = Vector2(25.0761, -4.96589)
 limit_top = 0
 limit_bottom = 197
 position_smoothing_enabled = true

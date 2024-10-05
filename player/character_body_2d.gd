@@ -6,7 +6,7 @@ extends CharacterBody2D
 var screen_size
 
 func _process(delta):
-	var velocity = Vector2.ZERO # The player's movement vector.
+	var velocity = Vector2.ZERO
 	if Input.is_action_pressed("Right"):
 		velocity.x += 1
 	if Input.is_action_pressed("Left"):
@@ -23,7 +23,7 @@ func _process(delta):
 		$AnimatedSprite2D.stop()
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
-	if velocity.x != 0:
+	if velocity.x != 0 || velocity.y != 0:
 		$AnimatedSprite2D.animation = "right"
 		$AnimatedSprite2D.flip_v = false
 		$AnimatedSprite2D.flip_h = velocity.x < 0
