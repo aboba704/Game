@@ -23,10 +23,12 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "jus": "res://tl/jus.dch",
-"mc": "res://tl/mc.dch"
+"mc": "res://tl/mc.dch",
+"womN": "res://tl/womN.dch"
 }
 directories/dtl_directory={
-"ev1": "res://tl/ev1.dtl"
+"ev1": "res://tl/ev1.dtl",
+"ev2": "res://tl/ev2.dtl"
 }
 layout/style_list=[]
 layout/default_style=""
