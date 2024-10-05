@@ -4,16 +4,16 @@
 [ext_resource type="Script" path="res://scenes/forest.gd" id="1_piyhe"]
 [ext_resource type="Texture2D" uid="uid://c8n1ge2savbg1" path="res://art/Backgrounds/forest_front.png" id="3_3fhhi"]
 [ext_resource type="PackedScene" uid="uid://bvc61qo2fp8bb" path="res://UI/pause_menu.tscn" id="3_4olho"]
-[ext_resource type="PackedScene" path="res://player/character.tscn" id="3_ialo2"]
+[ext_resource type="PackedScene" uid="uid://dy4ft2fxptwr2" path="res://player/character.tscn" id="3_ialo2"]
 [ext_resource type="AudioStream" uid="uid://dqmsrjbdpqc3j" path="res://sound/ForestTheme.mp3" id="4_mv6un"]
 [ext_resource type="Script" path="res://scenes/area_2d.gd" id="7_tkct6"]
 [ext_resource type="Texture2D" uid="uid://dgym4afwheivb" path="res://art/anim/npc1.png" id="8_7dhyv"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5kuic"]
-size = Vector2(3254, 138.609)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iom7f"]
+size = Vector2(702, 782)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3idh"]
-size = Vector2(674, 242)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5kuic"]
+size = Vector2(3273.27, 138.609)
 
 [node name="Game2" type="Node2D"]
 position = Vector2(-267, 3)
@@ -33,6 +33,20 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_aysh2")
 expand_mode = 1
 stretch_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 1198.0
+offset_top = 309.0
+offset_right = 2278.0
+offset_bottom = 1389.0
+texture = ExtResource("8_7dhyv")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("7_tkct6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1655, 669)
+shape = SubResource("RectangleShape2D_iom7f")
 
 [node name="Character" parent="." instance=ExtResource("3_ialo2")]
 position = Vector2(1011, 532)
@@ -70,21 +84,3 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(1896, 63.3043)
 shape = SubResource("RectangleShape2D_5kuic")
-
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(1348, 1407)
-script = ExtResource("7_tkct6")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(396, -563)
-shape = SubResource("RectangleShape2D_f3idh")
-one_way_collision = true
-
-[node name="TextureRect" type="TextureRect" parent="Area2D"]
-offset_left = -150.0
-offset_top = -1098.0
-offset_right = 930.0
-offset_bottom = -18.0
-texture = ExtResource("8_7dhyv")
-
-[connection signal="body_entered" from="Area2D" to="." method="ev2_col_gd"]

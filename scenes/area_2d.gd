@@ -1,9 +1,17 @@
 extends Area2D
 
+# Переменная для отслеживания состояния коллизии
+var is_body_inside = false
+
 func _on_Area2D_body_entered(body):
-	if body.is_in_group("player"):  # Проверяем, принадлежит ли объект к группе "player"
-		print("Игрок вошел в область!")
+	is_body_inside = true
+	print("Тело вошло в область: ", body.name)
 
 func _on_Area2D_body_exited(body):
-	if body.is_in_group("player"):
-		print("Игрок покинул область!")
+	is_body_inside = false
+	print("Тело покинуло область: ", body.name)
+
+func _process(delta):
+	if is_body_inside and Input.is_action_just_pressed("ui_accept"):
+		print("Запуск катсцены...")
+		Dialogic.start("res://tl/ev2.dtl")

@@ -1,10 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://b0fql0crfd2g6"]
+[gd_scene load_steps=7 format=3 uid="uid://c48suju3ijkvo"]
 
 [ext_resource type="Texture2D" uid="uid://b6uu2l5r0snkb" path="res://art/Backgrounds/фон_деревня_дальний_план.png" id="1_le0qo"]
 [ext_resource type="PackedScene" uid="uid://bvc61qo2fp8bb" path="res://UI/pause_menu.tscn" id="3_rnr4b"]
 [ext_resource type="Texture2D" uid="uid://htotox7r27rc" path="res://art/Backgrounds/фон_деревня_передний_план.png" id="3_ysclk"]
 [ext_resource type="AudioStream" uid="uid://8cya5excw1mq" path="res://sound/VillageTheme.mp3" id="5_d1r7x"]
-[ext_resource type="PackedScene" path="res://player/character.tscn" id="6_fj744"]
+[ext_resource type="PackedScene" uid="uid://dy4ft2fxptwr2" path="res://player/character.tscn" id="6_fj744"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nv1jb"]
 size = Vector2(3265, 142.5)
