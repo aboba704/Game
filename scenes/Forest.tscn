@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://bvc61qo2fp8bb" path="res://UI/pause_menu.tscn" id="3_4olho"]
 [ext_resource type="PackedScene" uid="uid://dy4ft2fxptwr2" path="res://player/character.tscn" id="3_ialo2"]
 [ext_resource type="AudioStream" uid="uid://dqmsrjbdpqc3j" path="res://sound/ForestTheme.mp3" id="4_mv6un"]
-[ext_resource type="Script" path="res://scenes/next_room_12313.gd" id="7_py3i6"]
 [ext_resource type="Texture2D" uid="uid://dgym4afwheivb" path="res://art/anim/npc1.png" id="8_7dhyv"]
 [ext_resource type="Script" path="res://scenes/next_room.gd" id="9_rol33"]
+[ext_resource type="Script" path="res://scenes/next_room_3.gd" id="10_0oora"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5kuic"]
 size = Vector2(3285.94, 80.7511)
@@ -96,16 +96,6 @@ position = Vector2(-128.648, -1924.76)
 scale = Vector2(0.695215, 1.63787)
 shape = SubResource("RectangleShape2D_5kuic")
 
-[node name="NextRoom12313" type="Area2D" parent="."]
-scale = Vector2(1.6, 5.08)
-script = ExtResource("7_py3i6")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NextRoom12313"]
-position = Vector2(2013.38, 114.668)
-rotation = -3.14159
-scale = Vector2(1.42832, -0.831235)
-shape = SubResource("RectangleShape2D_ncypi")
-
 [node name="Dialog" type="Area2D" parent="."]
 position = Vector2(-1507, -30)
 scale = Vector2(1.6, 5.08)
@@ -125,7 +115,17 @@ offset_bottom = 1028.85
 scale = Vector2(0.396633, 0.230005)
 texture = ExtResource("8_7dhyv")
 
-[connection signal="body_entered" from="NextRoom12313" to="NextRoom12313" method="_on_body_entered"]
-[connection signal="body_exited" from="NextRoom12313" to="NextRoom12313" method="_on_body_exited"]
+[node name="NextRoom3" type="Area2D" parent="."]
+scale = Vector2(1.6, 5.08)
+script = ExtResource("10_0oora")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NextRoom3"]
+position = Vector2(2013.38, 114.668)
+rotation = -3.14159
+scale = Vector2(1.42832, -0.831235)
+shape = SubResource("RectangleShape2D_ncypi")
+
 [connection signal="body_entered" from="Dialog" to="Dialog" method="_on_body_entered"]
 [connection signal="body_exited" from="Dialog" to="Dialog" method="_on_body_exited"]
+[connection signal="body_entered" from="NextRoom3" to="NextRoom3" method="_on_body_entered"]
+[connection signal="body_exited" from="NextRoom3" to="NextRoom3" method="_on_body_exited"]
