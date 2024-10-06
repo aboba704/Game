@@ -124,5 +124,18 @@ rotation = -3.14159
 scale = Vector2(1.42832, -0.831235)
 shape = SubResource("RectangleShape2D_ncypi")
 
+[node name="Dialog" type="Area2D" parent="."]
+position = Vector2(-843, 6)
+scale = Vector2(1.6, 5.08)
+script = ExtResource("9_rol33")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dialog"]
+position = Vector2(2013.38, 114.668)
+rotation = -3.14159
+scale = Vector2(1.42832, -0.831235)
+shape = SubResource("RectangleShape2D_ncypi")
+
 [connection signal="body_entered" from="NextRoom" to="NextRoom" method="_on_body_entered"]
 [connection signal="body_exited" from="NextRoom" to="NextRoom" method="_on_body_exited"]
+[connection signal="body_entered" from="Dialog" to="Dialog" method="_on_body_entered"]
+[connection signal="body_exited" from="Dialog" to="Dialog" method="_on_body_exited"]
