@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://0c38vj51l3a8"]
+[gd_scene load_steps=11 format=3 uid="uid://0c38vj51l3a8"]
 
 [ext_resource type="Texture2D" uid="uid://d3vfhwktvx6lp" path="res://art/Backgrounds/forest_back.png" id="1_aysh2"]
 [ext_resource type="Script" path="res://scenes/forest.gd" id="1_piyhe"]
@@ -6,18 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://bvc61qo2fp8bb" path="res://UI/pause_menu.tscn" id="3_4olho"]
 [ext_resource type="PackedScene" uid="uid://dy4ft2fxptwr2" path="res://player/character.tscn" id="3_ialo2"]
 [ext_resource type="AudioStream" uid="uid://dqmsrjbdpqc3j" path="res://sound/ForestTheme.mp3" id="4_mv6un"]
-[ext_resource type="Script" path="res://scenes/area_2d.gd" id="7_tkct6"]
 [ext_resource type="Texture2D" uid="uid://dgym4afwheivb" path="res://art/anim/npc1.png" id="8_7dhyv"]
 [ext_resource type="Script" path="res://scenes/next_room.gd" id="9_rol33"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iom7f"]
-size = Vector2(702, 782)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5kuic"]
 size = Vector2(3285.94, 80.7511)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ncypi"]
-size = Vector2(268.162, 220.471)
+size = Vector2(326.615, 226.512)
 
 [node name="Game2" type="Node2D"]
 position = Vector2(-267, 3)
@@ -38,30 +34,12 @@ texture = ExtResource("1_aysh2")
 expand_mode = 1
 stretch_mode = 2
 
-[node name="TextureRect3" type="TextureRect" parent="."]
-offset_left = 1198.0
-offset_top = 309.0
-offset_right = 2278.0
-offset_bottom = 1389.0
-texture = ExtResource("8_7dhyv")
-
-[node name="Area2D" type="Area2D" parent="."]
-collision_mask = 0
-script = ExtResource("7_tkct6")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(1655, 669)
-shape = SubResource("RectangleShape2D_iom7f")
-
-[node name="Character" parent="." instance=ExtResource("3_ialo2")]
-position = Vector2(1011, 532)
-
 [node name="TextureRect2" type="TextureRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 267.0
-offset_top = -3.0
+offset_top = -3.00006
 offset_right = 6791.0
 offset_bottom = 2157.0
 grow_horizontal = 2
@@ -70,6 +48,9 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_3fhhi")
 expand_mode = 1
 stretch_mode = 2
+
+[node name="Character" parent="." instance=ExtResource("3_ialo2")]
+position = Vector2(1011, 532)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2
@@ -125,15 +106,23 @@ scale = Vector2(1.42832, -0.831235)
 shape = SubResource("RectangleShape2D_ncypi")
 
 [node name="Dialog" type="Area2D" parent="."]
-position = Vector2(-843, 6)
+position = Vector2(-1507, -30)
 scale = Vector2(1.6, 5.08)
 script = ExtResource("9_rol33")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dialog"]
-position = Vector2(2013.38, 114.668)
+position = Vector2(1931.25, 118.898)
 rotation = -3.14159
 scale = Vector2(1.42832, -0.831235)
 shape = SubResource("RectangleShape2D_ncypi")
+
+[node name="TextureRect3" type="TextureRect" parent="Dialog/CollisionShape2D"]
+offset_left = -486.148
+offset_top = -51.1545
+offset_right = 593.852
+offset_bottom = 1028.85
+scale = Vector2(0.396633, 0.230005)
+texture = ExtResource("8_7dhyv")
 
 [connection signal="body_entered" from="NextRoom" to="NextRoom" method="_on_body_entered"]
 [connection signal="body_exited" from="NextRoom" to="NextRoom" method="_on_body_exited"]
