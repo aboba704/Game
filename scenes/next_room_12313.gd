@@ -8,5 +8,4 @@ func _on_body_entered(body: CharacterBody2D) -> void:
 
 func _on_body_exited(body) -> void:
 	if entered == true:
-		Dialogic.start("res://tl/ev2.dtl")
-		queue_free()
+		get_tree().change_scene_to_file("res://scenes/Town.tscn")
